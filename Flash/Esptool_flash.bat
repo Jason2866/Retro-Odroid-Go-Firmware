@@ -1,0 +1,1 @@
+esptool.py --chip esp32 --port COM5 --baud 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size detect --flash_freq 80m 0xd000 ota_data_initial.bin 0x1000 bootloader.bin 0xf000 phy_init_data.bin 0x8000 partitions.bin 0x10000 Retro-Odroid-Go.bin
